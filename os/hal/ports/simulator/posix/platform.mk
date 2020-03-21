@@ -1,6 +1,7 @@
 # List of all the Posix platform files.
 PLATFORMSRC = ${CHIBIOS}/os/hal/ports/simulator/posix/hal_lld.c \
               ${CHIBIOS}/os/hal/ports/simulator/posix/hal_serial_lld.c \
+              ${CHIBIOS}/os/hal/ports/simulator/posix/hal_can_lld.c \
               ${CHIBIOS}/os/hal/ports/simulator/console.c \
               ${CHIBIOS}/os/hal/ports/simulator/hal_pal_lld.c \
               ${CHIBIOS}/os/hal/ports/simulator/hal_st_lld.c
