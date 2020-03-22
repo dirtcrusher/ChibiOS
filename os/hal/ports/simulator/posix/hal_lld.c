@@ -77,6 +77,11 @@ void _sim_check_for_interrupts(void) {
     int_occurred = true;
   }
 #endif
+#if HAL_USE_CAN
+  if(can_lld_serve_interrupt()) {
+    int_occurred = true;
+  }
+#endif
 
   gettimeofday(&tv, NULL);
   if (timercmp(&tv, &nextcnt, >=)) {
